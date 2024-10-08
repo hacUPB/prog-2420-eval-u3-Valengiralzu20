@@ -18,7 +18,8 @@ Define claramente las funcionalidades que tendrá tu programa:
 -Cálculo de precio: calcular el precio total de la compra según la hora
 -Registro de ventas: almacenar el registro de ventas de manera que el cine pueda evidenciar cuánto vendió. 
 -Emitir un ticket en el cual se muestren detalles de la reserva. 
-Específica que casos o situaciones cubrirá: 
+
+### Específica que casos o situaciones cubrirá: 
 Las situaciones que cubrirá será la de comprar entradas en la cual podrá: seleccionar película, seleccionar horario, seleccionar asiento, calcular el precio según la hora, emitirá los detalles de la reserva.  
 
 ---
