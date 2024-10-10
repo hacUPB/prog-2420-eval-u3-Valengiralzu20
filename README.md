@@ -69,5 +69,6 @@ def reservar_asiento(pelicula, fila, columna):
     return
 
   sala_num = peliculas[pelicula]["sala"]
+  
   sala = salas[sala_num - 1]  # Ajustar índice de la sala
 
