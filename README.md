@@ -25,7 +25,9 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 ### Estructura de datos utilizados 
 #### Para la estructura de datos se utilizará: 
 -Diccionario para las películas: en la cual se tenga una clave del título de la película, y un diccionario para los valores en el cual se incluya horario, tarifa y sala.
--Una matriz para representar las salas: las filas y columnas representan los asientos y poner un while en el que esté el valor y sea true cuando el asiento está disponible y false cuando está ocupado. 
+
+-Una matriz para representar las salas: las filas y columnas representan los asientos y poner un while en el que esté el valor y sea true cuando el asiento está disponible y false cuando está ocupado.
+ 
 -Conjunto para los asientos ocupados de una película, los elementos serán el numero de asientos ocupados para una película en particular, se debe agregar operaciones con las cuales se permita verificar rápidamente si un asiento está disponible o si ya ha sido reservado. 
 
----
+
