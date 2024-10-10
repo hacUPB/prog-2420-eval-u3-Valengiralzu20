@@ -13,9 +13,13 @@ Justifica la importancia o utilidad de tu programa: el desarrollo de este progra
 
 ### Alcance 
 Define claramente las funcionalidades que tendrá tu programa: 
--Películas y horarios: hacer un diccionario de películas y crear funciones según la película en la que se definan sala, fecha, hora
+
+-Películas y horarios: hacer un diccionario de películas y crear funciones según la película en la que se definan sala, fecha, hora.
+
 -Distribución de asientos: representar visualmente la distribución de los asientos en cada sala, en la que se indiquen asientos disponibles y ocupados. 
--Cálculo de precio: calcular el precio total de la compra según la hora
+
+-Cálculo de precio: calcular el precio total de la compra según la hora.
+
 -Registro de ventas: almacenar el registro de ventas de manera que el cine pueda evidenciar cuánto vendió. 
 -Emitir un ticket en el cual se muestren detalles de la reserva. 
 
@@ -27,7 +31,7 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 -Diccionario para las películas: en la cual se tenga una clave del título de la película, y un diccionario para los valores en el cual se incluya horario, tarifa y sala.
 
 -Una matriz para representar las salas: las filas y columnas representan los asientos y poner un while en el que esté el valor y sea true cuando el asiento está disponible y false cuando está ocupado.
- 
+
 -Conjunto para los asientos ocupados de una película, los elementos serán el numero de asientos ocupados para una película en particular, se debe agregar operaciones con las cuales se permita verificar rápidamente si un asiento está disponible o si ya ha sido reservado. 
 
 
