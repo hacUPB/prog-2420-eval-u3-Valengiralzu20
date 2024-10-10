@@ -37,12 +37,14 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 ### Pseudocódigo 
 #### Definición de estructuras de datos
 peliculas = {}  # Diccionario de películas
+
 salas = []  # Lista de matrices para las salas
+
 asientos_ocupados = {}  # Diccionario para almacenar los asientos ocupados por película
 
 ##### Función para iniciar sistema
 def iniciar_sistema():
-  #### Para agrregar películas al diccionario
+  #### Para agregar películas al diccionario
   peliculas["Deadpool"] = {"horario": datetime.datetime(2023, 4, 24, 15, 0), "tarifa": "full", "sala": 1}
 
   #### Crear matrices para las salas
