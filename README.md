@@ -56,7 +56,7 @@ def iniciar_sistema():
 def mostrar_cartelera():
 
   for pelicula, datos in peliculas.items():
-  
+
     print(f"{pelicula}: {datos['horario']}, {datos['tarifa']}, Sala {datos['sala']}")
 
 ##### Para reservar un asiento 
@@ -67,4 +67,7 @@ def reservar_asiento(pelicula, fila, columna):
     print("Película no encontrada")
 
     return
+
+  sala_num = peliculas[pelicula]["sala"]
+  sala = salas[sala_num - 1]  # Ajustar índice de la sala
 
