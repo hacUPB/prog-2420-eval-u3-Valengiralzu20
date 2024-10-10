@@ -35,21 +35,21 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 -Conjunto para los asientos ocupados de una película, los elementos serán el numero de asientos ocupados para una película en particular, se debe agregar operaciones con las cuales se permita verificar rápidamente si un asiento está disponible o si ya ha sido reservado. 
 
 ### Pseudocódigo 
-# Definición de estructuras de datos
+#### Definición de estructuras de datos
 peliculas = {}  # Diccionario de películas
 salas = []  # Lista de matrices para las salas
 asientos_ocupados = {}  # Diccionario para almacenar los asientos ocupados por película
 
-# Función para iniciar sistema
+##### Función para iniciar sistema
 def iniciar_sistema():
-  # Agregar películas al diccionario
+  #### Para agrregar películas al diccionario
   peliculas["Deadpool"] = {"horario": datetime.datetime(2023, 4, 24, 15, 0), "tarifa": "full", "sala": 1}
 
-  # Crear matrices para las salas
+  #### Crear matrices para las salas
   sala1 = [[True for _ in range(5)] for _ in range(5)]
   salas.append(sala1)
 
-# Función para mostrar la cartelera
+##### Función para mostrar la cartelera
 def mostrar_cartelera():
   for pelicula, datos in peliculas.items():
     print(f"{pelicula}: {datos['horario']}, {datos['tarifa']}, Sala {datos['sala']}")
