@@ -49,16 +49,22 @@ def iniciar_sistema():
 
   #### Crear matrices para las salas
   sala1 = [[True for _ in range(5)] for _ in range(5)]
+
   salas.append(sala1)
 
 ##### Función para mostrar la cartelera
 def mostrar_cartelera():
+
   for pelicula, datos in peliculas.items():
+  
     print(f"{pelicula}: {datos['horario']}, {datos['tarifa']}, Sala {datos['sala']}")
 
 ##### Para reservar un asiento 
 def reservar_asiento(pelicula, fila, columna):
+
   if pelicula not in peliculas:
+
     print("Película no encontrada")
+
     return
 
