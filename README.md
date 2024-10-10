@@ -44,7 +44,7 @@ asientos_ocupados = {}  # Diccionario para almacenar los asientos ocupados por p
 
 ##### Función para iniciar sistema
 def iniciar_sistema():
-  #### Para agregar películas al diccionario
+  #### Para aregar películas al diccionario
   peliculas["Deadpool"] = {"horario": datetime.datetime(2023, 4, 24, 15, 0), "tarifa": "full", "sala": 1}
 
   #### Crear matrices para las salas
@@ -56,4 +56,9 @@ def mostrar_cartelera():
   for pelicula, datos in peliculas.items():
     print(f"{pelicula}: {datos['horario']}, {datos['tarifa']}, Sala {datos['sala']}")
 
+##### Para reservar un asiento 
+def reservar_asiento(pelicula, fila, columna):
+  if pelicula not in peliculas:
+    print("Película no encontrada")
+    return
 
