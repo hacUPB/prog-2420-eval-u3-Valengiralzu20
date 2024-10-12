@@ -26,7 +26,7 @@ El desarrollo de este programa busca gestionar de manera eficiente la venta de e
 Las situaciones que cubrirá será la de comprar entradas en la cual podrá: seleccionar película, seleccionar horario, seleccionar asiento, calcular el precio según la hora, y se tendrá un control del total acumulado de las ventas del cine. 
   
 
-#### Estructura de datos a utilizar 
+### Estructura de datos a utilizar 
 -Diccionario para las películas: en la cual se tenga una clave del título de la película, y un diccionario para los valores en el cual se incluya horario, tarifa y sala.
 
 -Una matriz para representar las salas: las filas y columnas representan los asientos y poner un while en el que esté el valor y sea true cuando el asiento está disponible y false cuando está ocupado.
@@ -34,40 +34,4 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 -Conjunto para los asientos ocupados de una película, los elementos serán el numero de asientos ocupados para una película en particular, se debe agregar operaciones con las cuales se permita verificar rápidamente si un asiento está disponible o si ya ha sido reservado. 
 
 ### Pseudocódigo 
-#### Definición de estructuras de datos
-peliculas = {}  # Diccionario de películas
-
-salas = []  # Lista de matrices para las salas
-
-asientos_ocupados = {}  # Diccionario para almacenar los asientos ocupados por película
-
-##### Función para iniciar sistema
-def iniciar_sistema():
-  #### Para aregar películas al diccionario
-  peliculas["Deadpool"] = {"horario": datetime.datetime(2023, 4, 24, 15, 0), "tarifa": "full", "sala": 1}
-
-  #### Crear matrices para las salas
-  sala1 = [[True for _ in range(5)] for _ in range(5)]
-
-  salas.append(sala1)
-
-##### Función para mostrar la cartelera
-def mostrar_cartelera():
-
-  for pelicula, datos in peliculas.items():
-
-    print(f"{pelicula}: {datos['horario']}, {datos['tarifa']}, Sala {datos['sala']}")
-
-##### Para reservar un asiento 
-def reservar_asiento(pelicula, fila, columna):
-
-  if pelicula not in peliculas:
-
-    print("Película no encontrada")
-
-    return
-
-  sala_num = peliculas[pelicula]["sala"]
-  
-  sala = salas[sala_num - 1]  # Ajustar índice de la sala
-
+falta poner el pseudocodigo organizado está en word 
