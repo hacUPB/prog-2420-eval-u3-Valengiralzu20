@@ -70,6 +70,6 @@ Está indicando opción invalida lo que indica que hay un error en la redacción
 ![Imagen 20.4](image-16.png)
 ![Imagen 20.5](image-17.png)
 
-22. Si bien ya el código funciona bien, en las indicaciones de la evaluación se dice que el código debe seguir las convenciones de estilo de Python (PEP8) el cual utiliza nombres descriptivos para variables y funciones. 
+21. Si bien ya el código funciona bien, en las indicaciones de la evaluación se dice que el código debe seguir las convenciones de estilo de Python (PEP8) el cual utiliza nombres descriptivos para variables y funciones. 
 
-23. Finalmente, en main.py se puede evidenciar el código completo con los requerimientos necesarios. 
+22. Finalmente, en main.py se puede evidenciar el código completo con los requerimientos necesarios. 
