@@ -1,4 +1,4 @@
-#Sistema de reservas de Cinema UPB
+#Sistema de reservas de Cinema
 def main():
     def mostrar_asientos(sala):
         """Muestra el estado de los asientos en la sala."""
@@ -114,9 +114,6 @@ def main():
             print(f"El precio de la entrada es: ${precio}")
         elif opcion == "3":
             break  # Sale del bucle y termina el programa
-
-
-
 
 if __name__ == "__main__":
     main()
