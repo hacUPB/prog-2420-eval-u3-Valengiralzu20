@@ -36,97 +36,173 @@ Las situaciones que cubrirá será la de comprar entradas en la cual podrá: sel
 ### Pseudocódigo 
 
 FUNCION mostrar_asientos(sala)
+
     PARA cada fila en sala HACER
+
         PARA cada columna en sala[fila] HACER
+
             SI sala[fila][columna] ES VERDADERO ENTONCES
+
                 IMPRIMIR "❌"
+
             SINO
+
                 IMPRIMIR "✅"
+
             FIN SI
+
         FIN PARA
+
         IMPRIMIR SALTO_DE_LINEA
+
     FIN PARA
+
 FIN FUNCION
 
 FUNCION mostrar_cartelera(peliculas)
+
     IMPRIMIR "Cartelera:"
+
     PARA cada pelicula, info EN peliculas HACER
+
         IMPRIMIR indice, pelicula, info["sala"], info["hora"]
+
     FIN PARA
+
     IMPRIMIR SALTO_DE_LINEA
+
 FIN FUNCION
 
 FUNCION seleccionar_pelicula(peliculas)
+
     mostrar_cartelera(peliculas)
+
     MIENTRAS VERDADERO HACER
+
         INTENTAR
+
             opcion = CONVERTIR_A_ENTERO(entrada_del_usuario)
+
             SI opcion es válida ENTONCES
+
                 pelicula_seleccionada = pelicula correspondiente a opcion
+
                 RETORNAR pelicula_seleccionada
+
             SINO
+
                 IMPRIMIR "Opción no válida."
+
             FIN SI
+
         EXCEPTO ValorError
+
             IMPRIMIR "Entrada inválida."
+
     FIN MIENTRAS
+
 FIN FUNCION
 
 FUNCION calcular_precio(hora)
+
     hora = OBTENER_HORA_DE_CADENA(hora)
+
     RETORNAR 6000 SI hora < 15 SINO 12000
+
 FIN FUNCION
 
 FUNCION reservar_asientos(sala)
+
     mostrar_asientos(sala)
+
     MIENTRAS VERDADERO HACER
+
         fila = CONVERTIR_A_ENTERO(entrada_del_usuario)
+
         columna = CONVERTIR_A_ENTERO(entrada_del_usuario)
         
         SI coordenadas son válidas ENTONCES
+
             SI sala[fila][columna] ES VERDADERO ENTONCES
+
                 IMPRIMIR "Asiento no disponible."
+
             SINO
+
                 sala[fila][columna] = VERDADERO
+
                 IMPRIMIR "Su asiento ha sido reservado."
+
                 mostrar_asientos(sala)
+
                 SALIR
+
             FIN SI
+
         SINO
+
             IMPRIMIR "Asiento inválido."
+
         FIN SI
+
     FIN MIENTRAS
+
 FIN FUNCION
 
 INICIO DEL PROGRAMA
+
 DEFINIR peliculas COMO diccionario
+
 DEFINIR salas COMO diccionario
 
 MIENTRAS VERDADERO HACER
+
     IMPRIMIR "Bienvenido a Cinema UPB"
+
     IMPRIMIR "1. Ver cartelera"
+
     IMPRIMIR "2. Reservar asiento"
+
     IMPRIMIR "3. Salir"
 
     MIENTRAS VERDADERO HACER
+
         opcion = entrada_del_usuario
+
         SI opcion en ["1", "2", "3"] ENTONCES
+
             SALIR
+
         SINO
+
             IMPRIMIR "Opción inválida."
+
         FIN SI
+
     FIN MIENTRAS
 
     SI opcion == "1" ENTONCES
+
         mostrar_cartelera(peliculas)
+
     SINO SI opcion == "2" ENTONCES
+
         pelicula = seleccionar_pelicula(peliculas)
+
         sala_seleccionada = obtener_sala_de(pelicula)
+
         reservar_asientos(salas[sala_seleccionada])
+
         precio = calcular_precio(peliculas[pelicula]["hora"])
+
         IMPRIMIR "El precio de la entrada es:", precio
+
     SINO
+
         SALIR
+
     FIN SI
+
 FIN MIENTRAS
+
 FIN DEL PROGRAMA
