@@ -11,6 +11,7 @@ Sin embargo, aun el programa no funciona para que a medida que el usuario vaya i
 ![Imagen 1](image.png)
  
 2. Se creó una función para mostrar las opciones de la cartelera, dentro de esta función se creo un diccionario de películas en el cual está el nombre de la película, la hora y la sala. Luego se creó una función para poder seleccionar la película, en esta se utiliza la función anterior y se pide al usuario que ingrese el nombre de la película y devuelve el nombre de la película. 
+![Imagen 2](image-1.png)
 
  
 3. Se creó una función que calcule el precio de la entrada según el horario de la película, esta función toma como entrada una cadena de texto que representa la hora de la película, extrae la hora y la convierte en numero entero para facilitar la comparación, hace las respectivas comparaciones y devuelve el valor calculado.
